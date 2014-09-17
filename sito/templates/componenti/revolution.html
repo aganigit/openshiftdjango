@@ -1,0 +1,55 @@
+<style type="text/css">
+.defaultimg {
+	-webkit-border-bottom-right-radius: 0px;
+   -webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	padding:0px;
+}
+</style>
+
+<div class="col-sm-12" style="margin:0px; padding:0px">
+
+<div class="tp-banner" style="margin:0px;padding:0px">
+      <ul>
+        {% for immagini in post.galleria.all %}
+        <!-- SLIDE  -->
+        <li data-transition="fade" data-slotamount="7" data-masterspeed="1500" >
+          <!-- MAIN IMAGE -->
+          {% load cropping %}
+          <img src="{% cropped_thumbnail immagini "slider" %}"  alt="slidebg1"  data-bgfit="cover" data-bgposition="left top" data-bgrepeat="no-repeat">
+          <!-- LAYERS -->
+          <!-- LAYER NR. 1 -->
+          <div class="tp-caption skewfromrightshort fadeout"
+            data-x="85"
+            data-y="224"
+            data-speed="500"
+            data-start="1200"
+            data-easing="Power4.easeOut">
+          </div>
+          
+
+        </li>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+</div>
+
+    <!-- LOOK THE DOCUMENTATION FOR MORE INFORMATIONS -->
+    <script type="text/javascript">
+        jQuery(document).ready(function() {
+             jQuery('.tp-banner').revolution(
+            {
+              delay:9000,
+              startwidth:1170,
+              startheight:500,
+              hideThumbs:10
+            });
+        });
+    </script>
+
+

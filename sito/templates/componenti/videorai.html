@@ -1,0 +1,10 @@
+
+<div class="row">
+	{% for video in post.rai.all %}
+	<div class="col-md-6" style="margin-left:0px; padding-bottom: 30px;">
+		<h4>{{video.titolo}}</h4>
+		{{video.embedded|safe}}
+	</div>
+	{% endfor %}
+
+</div>

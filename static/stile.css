@@ -1,0 +1,255 @@
+body{
+    background: url('img/sfondo1.JPG') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: 12%; 
+    color: #999999; 
+    font-family: "Dosis";
+   	font-style: normal;
+   	font-weight: 200; 
+   	font-size: 15px; 
+}
+
+a:link,
+a:hover,
+a:active {
+	color:#999999;
+	text-decoration: none;
+}
+
+h3 {
+	color: #999999;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+p {
+	color: #999999;
+	font-size: 17px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-align: left;
+}
+
+
+.navbar-fixed-top {
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+}
+
+.navbar-default {
+	padding-top:10px;
+	height: 100px;
+	color: #000000;
+	background-color: #ffffff;
+	/*background: rgba(255, 255, 255, 0.8); */
+	border-color: #e7e7e7;
+	border-width: 0px;
+}
+
+
+
+.navbar-default a,
+.navbar-default a:visited,
+.navbar-default a:hover,
+.navbar-default a:link,
+.navbar-default a:active {
+	color: #000000;
+	font-family: "Dosis";
+}
+
+.navbar-nav>li>a,
+.navbar-nav>li>a:link,
+.navbar-nav>li>a:hover,
+.navbar-nav>li>a:visited,
+.navbar-nav>li>a:active {
+	color: #000000;
+}
+
+.trasparenza {
+	background: rgba(255, 255, 255, 1);
+	border-width: 0px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top: 0px;
+}
+
+.logo {
+	margin-top:0px;-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	margin-top: 0px;
+	margin-left:0px;
+	margin-right: 0px;
+	padding-top: 0px;
+}
+
+.stondo {
+	-webkit-border-top-left-radius: 20px;
+	-webkit-border-top-right-radius: 20px;
+	-moz-border-radius-topleft: 20px;
+	-moz-border-radius-topright: 20px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	margin-top: 0px;
+	margin-left:0px;
+	margin-right: 0px;
+}
+
+.btn-primary {
+	background-color: #a20e3f;
+	border-color: #a20e3f;
+	padding: 3px;
+}
+
+.fa-lg {
+	color: #a20e3f;
+}
+
+.menuxx {width: 30px;}
+
+.conan {
+	background-color: #ffffff;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	margin-top:-130px;
+	height: auto;
+	margin-bottom: 50px;
+	padding-top:0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	width: 1135px;
+}
+
+.imgconan {background-color: #ffffff;
+	width:1135px;
+	-webkit-border-bottom-right-radius: 20px;
+	-webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	padding:0px;
+}
+
+.categorie {
+	background-color: #a20e3f;
+	color: #ffffff;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top:0px;
+	margin-botto:5px;
+	font-size: 14px;
+}
+
+.cate {
+	background-color: #a20e3f;
+	color: #ffffff;
+	margin-top: 15px;
+	margin-left:-15px;
+	padding-left:27px;
+	width:300px;
+}
+
+/*
+.tp-banner {
+	margin-top:0px;
+	padding-top:0px;
+
+}
+*/
+
+.defaultimg {
+	-webkit-border-bottom-right-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	padding:0px;
+}
+
+.titololist {
+	margin-top:5px
+}
+
+.titololist2 {
+	margin-top:5px;
+	font-size:17px;
+}
+
+/*
+.galleryhome {
+	margin-bottom: 30px;
+	margin-top: -120px;
+}
+*/
+
+
+/*
+.ombretta {
+	 background: rgb(238, 238, 238);
+    width:200px;
+    padding: 10px;
+    -moz-box-shadow:5px 5px 2px #333333;
+    -webkit-box-shadow:5px 5px 2px #333333;
+    box-shadow:5px 5px 2px #333333;
+}
+*/
+
+.listabox {
+	height:615px;
+	margin-bottom:20px;
+}
+
+.ombra {
+  box-shadow: 3px 3px 3px #B2B2B2;
+  padding:0px;
+} 
+
+.ombretta {
+	height: 325px;
+}
+
+
+
+@media (max-width: 1024px) {
+
+	.listabox {
+		height:615px;
+		margin-bottom:70px;
+	}
+
+	.ombretta {
+	height: 325px;
+	margin-bottom: 70px;
+}
+
+
+
+}
+
+
+@media (max-width: 460px) {
+
+	.listabox {
+		height:615px;
+		margin-bottom:150px;
+	}
+
+	.ombretta {
+		
+	}
+}

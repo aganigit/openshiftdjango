@@ -1,0 +1,12 @@
+
+<div class="row">
+	{% for video in post.vimeo.all %}
+	<div class="col-md-6" style="margin-left:0px; padding-bottom: 30px;">
+		<h4>{{video.titolo}}</h4>
+		<a href="{{video.link}}" target="_Blank">
+		<img src="{{MEDIA_URL}}/{{video.thumb}}" class="img-responsive">
+		</a>
+	</div>
+	{% endfor %}
+
+</div>

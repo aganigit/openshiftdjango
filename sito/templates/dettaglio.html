@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container" style="padding-left: 30px; padding-right: 30px; margin-top:0px;">
+
+
+
+
+
+
+
+<div class="row" style="margin-top:-100px;padding-top:0px;">
+		{% if post.galleria.all %}
+			{% include "componenti/revolution.html" %}
+		{% endif %}
+
+	<div class="col-md-12" style="background-color: #ffffff">
+	 <h4 class="cate">{{post.categoria.titolo}}</h4>
+		
+		<div class="col-md-12">
+			<h1>{{post.titolo}}</h1>
+			<hr>
+			{% if post.pagrai == 1 %}
+
+				{% include "componenti/videorai.html" %}
+
+			{% elif post.pagvimeo == 1%}
+				{% include "componenti/videovimeo.html" %}
+			{% else %}
+			<p>{{ post.body|safe }}<p>
+
+			{% include "componenti/thumbgallery.html" %}
+
+			{% endif %}
+		
+			{% include "componenti/social.html" %}
+
+		</div>
+
+	</div>
+
+</div><!-- ROW -->
+
+
+</div><!-- CONTAINER -->
+
+
+{% include "componenti/menutopsmall.html" %}
+
+{%  endblock %}

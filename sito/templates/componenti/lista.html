@@ -1,0 +1,26 @@
+
+
+
+
+
+<div class="row">
+{% for post in post_list %}
+  		<div class="col-sm-6 col-md-3 listabox">
+    		<div class="thumbnail trasparenza ombra">
+          {% load cropping %}
+                <a href="{% url 'dettaglio' post.id %}">
+      		      <img src="{% cropped_thumbnail post "miniatura" %}" alt="..." class="stondo">
+                <p class="categorie">{{post.categoria.titolo}}</p>
+              </a>
+      		<div class="caption">
+            <a href="{% url 'dettaglio' post.id %}">
+        	 <h3 class="titololist">{{post.titolo}}</h3>
+        	 <p>{{post.body|safe|truncatechars:140}}</p>
+          </a>
+            <p><a href="{% url 'dettaglio' post.id %}" class="btn btn-primary" role="button"><i class="fa fa-angle-right" style="margin-top:3px;"></i></a> </p>
+          </div>
+        </div>
+      </div>
+{% endfor %}
+
+</div><!-- FINE ROW -->
