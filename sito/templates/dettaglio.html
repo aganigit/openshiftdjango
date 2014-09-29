@@ -29,17 +29,25 @@
 			{% elif post.pagvimeo == 1%}
 				{% include "componenti/videovimeo.html" %}
 			{% else %}
-			<p>{{ post.body|safe }}<p>
+				<p>{{ post.body|safe }}<p>
 
-			{% include "componenti/thumbgallery.html" %}
+				{% include "componenti/thumbgallery.html" %}
 
 			{% endif %}
+
+
+			<!-- RICHIEDI CHEF A DOMICILIO -->
+			{% if post.id == 12 %}
+				{% include "prenota.html" %}
+			{% endif %}
+			<!-- FINE RICHIEDI CHEF A DOMICILIO -->
 		
 			{% include "componenti/social.html" %}
 
 		</div>
 
 	</div>
+
 
 </div><!-- ROW -->
 

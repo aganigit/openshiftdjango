@@ -7,6 +7,13 @@ from sito.models import *
 from django.http import HttpResponseRedirect
 from django.core.urlresolvers import reverse
 
+##contact 
+from sito.contact import ContactForm
+from django import forms
+from django.core.mail import send_mail, BadHeaderError
+from django.core.context_processors import csrf
+
+
 # Create your views here.
 
 def IndexView(request):
@@ -31,3 +38,6 @@ def DettaglioView(request, post_id):
 				'post_list':post_list
 				}
 	return render_to_response('dettaglio.html', context, context_instance=RequestContext(request))
+
+
+###ContactForm

@@ -45,6 +45,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'contact_form',
     'easy_thumbnails',
     'image_cropping',
     'taggit',
@@ -125,3 +126,14 @@ THUMBNAIL_PROCESSORS = (
 IMAGE_CROPPING_THUMB_SIZE = (1425, 500)
 #cropping = ImageRatioField('image', '1425x500', size_warning=True)
 IMAGE_CROPPING_SIZE_WARNING = True
+
+
+
+
+
+EMAIL_HOST = 'smtp.gmail.com'   
+EMAIL_HOST_PASSWORD = 'kilpin99'  
+EMAIL_HOST_USER = 'pierangelo1982@googlemail.com' 
+EMAIL_PORT = 587 #465 or 587  
+#EMAIL_SUBJECT_PREFIX = 'Django Test mail'  
+EMAIL_USE_TLS = True  

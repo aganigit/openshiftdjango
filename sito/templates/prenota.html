@@ -1,0 +1,62 @@
+<div class="row">
+
+  
+  <div class="col-sm-12 contactscritte">
+    <h3>Richiesta Chef a Domicilio</h3>
+  <hr>
+<form action="/contact/" method="post">{% csrf_token %}
+<div class="form-group col-sm-6">
+    <label for="exampleInputEmail1" class="texttext" >Nome:</label>
+    <input name="nome" type="text" class="form-control livello" id="exampleInputEmail1" placeholder="">
+  </div>
+
+  <div class="form-group col-sm-6">
+    <label for="exampleInputEmail1" class="texttext">Cognome:</label>
+    <input name="cognome" type="text" class="form-control livello" id="exampleInputEmail1" placeholder="">
+  </div>
+
+  <div class="form-group col-sm-6">
+    <label for="exampleInputEmail1" class="texttext">Telefono:</label>
+    <input name="telefono" type="text" class="form-control livello" id="exampleInputEmail1" placeholder="">
+  </div>
+
+  <div class="form-group col-sm-6" class="texttext">
+    <label for="exampleInputEmail1" class="texttext">Fax:</label>
+    <input name="fax" type="text" class="form-control livello" id="" placeholder="">
+  </div>
+
+  <div class="form-group col-sm-6">
+    <label for="exampleInputEmail1" class="texttext">Email:</label>
+    <input name="email" type="text" class="form-control livello" id="" placeholder="">
+  </div>
+
+  
+  <div class="form-group col-sm-6">
+    <label for="exampleInputEmail1" class="texttext">Città:</label>
+    <input name="citta" type="text" class="form-control livello" id="" placeholder="">
+  </div>
+
+  <div class="form-group col-sm-12">
+    <label for="exampleInputEmail1" class="texttext">Indirizzo:</label>
+    <input name="indirizzo" type="text" class="form-control livello" id="" placeholder="">
+  </div>
+
+
+
+  <div class="form-group col-sm-12">
+    <label class="formcontrolcontatti texttext" for="">Messaggio:</label>
+    <textarea name="messaggio" class="form-control formcontrolcontatti" rows="11"></textarea>
+  </div>
+
+  
+
+  <button type="submit" class="btn btn-default" style="margin-left: 20px;">INVIA</button>
+</form>
+
+</div> <!-- end col6 -->
+
+</div><!-- ROW -->
+
+
+
+
