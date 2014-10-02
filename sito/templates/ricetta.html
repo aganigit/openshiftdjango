@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="container" style="padding-left: 30px; padding-right: 30px; margin-top:0px;">
+
+
+<div class="row" style="margin-top:-100px;padding-top:0px;">
+		{% if ricettario.galleria.all %}
+			{% include "componenti/revolution.html" %}
+		{% endif %}
+
+	<div class="col-md-12" style="background-color: #ffffff">
+		
+		<div class="col-md-12">
+			<h1>{{ricettario.titolo}}</h1>
+			<hr>
+			<p>{{ricettario.body|safe}}</p>
+		
+
+		
+			{% include "componenti/social.html" %}
+
+		</div>
+
+	</div>
+
+
+</div><!-- ROW -->
+
+
+</div><!-- CONTAINER -->
+
+
+{% include "componenti/menutopsmall.html" %}
+
+{%  endblock %}

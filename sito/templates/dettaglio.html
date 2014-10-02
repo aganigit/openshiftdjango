@@ -3,15 +3,9 @@
 {% block content %}
 
 
-<div class="container" style="padding-left: 30px; padding-right: 30px; margin-top:0px;">
+<div class="container containerdettaglio">
 
-
-
-
-
-
-
-<div class="row" style="margin-top:-100px;padding-top:0px;">
+<div class="row rowdettaglio">
 		{% if post.galleria.all %}
 			{% include "componenti/revolution.html" %}
 		{% endif %}
@@ -28,6 +22,10 @@
 
 			{% elif post.pagvimeo == 1%}
 				{% include "componenti/videovimeo.html" %}
+
+			{% elif post.pagrice == 1%}
+				{% include "componenti/ricettario.html" %}
+
 			{% else %}
 				<p>{{ post.body|safe }}<p>
 

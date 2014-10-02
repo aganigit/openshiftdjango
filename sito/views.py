@@ -33,11 +33,21 @@ def FreezerView(request):
 def DettaglioView(request, post_id):
 	post = Post.objects.get(pk=post_id)
 	post_list = Post.objects.all().order_by('-pub_date')
+	ricettario_list = Ricettario.objects.all().order_by('-pub_date')
 	context = {
 				'post': post,
-				'post_list':post_list
+				'post_list':post_list,
+				'ricettario_list': ricettario_list
 				}
 	return render_to_response('dettaglio.html', context, context_instance=RequestContext(request))
 
 
-###ContactForm
+def RicettarioDettaglioView(request, post_id):
+	ricettario = Ricettario.objects.get(pk=post_id)
+	context = {
+				'ricettario': ricettario
+				}
+	return render_to_response('ricetta.html', context, context_instance=RequestContext(request))
+
+
+

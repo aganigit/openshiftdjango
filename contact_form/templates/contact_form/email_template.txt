@@ -2,8 +2,13 @@ Hi there,
 
 You have receive a contact request.
 
-Name: {{ name }}
+Nome: {{ nome }}
+Cognome: {{ cognome }}
+Tel:  {{ telefono }}
+Fax: {{ fax }}
 Email: {{ email }}
-Message: {{ body }}
+Citta: {{ citta }}
+Indirizzo: {{ indirizzo }}
+Message: {{ messaggio }}
 
 Have a great day!

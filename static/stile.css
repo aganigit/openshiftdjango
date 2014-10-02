@@ -163,6 +163,7 @@ p {
 	width:300px;
 }
 
+
 /*
 .tp-banner {
 	margin-top:0px;
@@ -172,6 +173,16 @@ p {
 */
 
 .defaultimg {
+	-webkit-border-bottom-right-radius: 20px;
+   -webkit-border-bottom-left-radius: 20px;
+	-moz-border-radius-bottomright: 20px;
+	-moz-border-radius-bottomleft: 20px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	padding:0px;
+}
+
+.slotholder {
 	-webkit-border-bottom-right-radius: 20px;
    -webkit-border-bottom-left-radius: 20px;
 	-moz-border-radius-bottomright: 20px;
@@ -223,20 +234,170 @@ p {
 	height: 325px;
 }
 
+.containerevolu {
+	margin-bottom:30px;
+	margin-top:-120px;
+	}
 
+
+.containerdettaglio {
+	padding-left: 30px;
+	padding-right: 30px;
+	margin-top:0px;
+	}
+
+.footerok {
+	background-color: #ffffff; 
+	height: 160px; 
+	margin-top: 125px;
+}
+
+.rowdettaglio {
+	margin-top:-100px;
+	padding-top:0px;
+}
+
+
+.designedby {
+	color: #a20e3f;
+	font-size:12px;
+	float: right;
+}
+
+.designedby a,
+.designedby a:link,
+.designedby a:hover{
+	color: #a20e3f;
+	font-size:12px;
+	float: right;
+}
+
+.logofooterx {
+	height:110px; 
+	width: auto; 
+	padding-top: 20px;
+	}
 
 @media (max-width: 1024px) {
 
+	body{
+    	background: url('img/sfondo1.JPG') fixed;
+    	margin-top: 12%; 
+    	color: #999999; 
+    	font-family: "Dosis";
+   		font-style: normal;
+   		font-weight: 200; 
+   		font-size: 15px; 
+	}
+
+	.palt {height:150px;}
+
+
+
+	.titololist {
+		margin-top:5px;
+		font-size:18px;
+	}
+
 	.listabox {
-		height:615px;
-		margin-bottom:70px;
+		height:650px;
+		margin-bottom:10px;
 	}
 
 	.ombretta {
-	height: 325px;
-	margin-bottom: 70px;
+		height: 325px;
+		margin-bottom: 70px;
+	}
+
+	.containerevolu {
+		margin-bottom:30px;
+		margin-top:-20px;
+	}
+
+	.containerdettaglio {
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top:0px;
+	}
+
+	.containerfreezer {
+		margin-top:-50px;
+	}
+
+	.rowdettaglio {
+		margin-top:-23px;
+		padding-top:0px;
+}
+	.titololist2 {
+		height:66px;
+
+	}
+
+	.containerfreezer {
+		margin-top:60px;
+	}
+
+	.freezerx {
+		margin-bottom: 100px;
+	}
+
+
+
 }
 
+
+
+
+@media (max-width: 790px) {
+
+	body {
+    	background: url('img/sfondo1.JPG') fixed;
+    	color: #999999; 
+    	font-family: "Dosis";
+   		font-style: normal;
+   		font-weight: 200; 
+   		font-size: 15px; 
+	}
+
+	.titololist {
+		margin-top:5px;
+		height:60px;
+	}
+
+	.listabox {
+		height:670px;
+		margin-bottom:30px;
+	}
+
+	.ombretta {
+		height: 325px;
+		margin-bottom: 70px;
+	}
+
+	.containerevolu {
+		margin-bottom:30px;
+		margin-top:0px;
+	}	
+
+	.containerdettaglio {
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top:0px;
+	}	
+	.footerok {
+		background-color: #ffffff; 
+		height: 160px; 
+		margin-top: 200px;
+	}
+
+	.rowdettaglio {
+		margin-top:0px;
+		padding-top:0px;
+	}
+
+	.containerfreezer {
+		margin-top:100px;
+	}
 
 
 }
@@ -244,12 +405,106 @@ p {
 
 @media (max-width: 460px) {
 
+	body {
+    	background-color: #999999;
+    	margin-top: 12%; 
+    	color: #999999; 
+    	font-family: "Dosis";
+   		font-style: normal;
+   		font-weight: 200; 
+   		font-size: 15px; 
+	}
+
+
+	.logoimg {
+		position: relative;
+		width: 200px;
+	}
+
+	.navbar-default {
+		padding-top:10px;
+		height: auto;
+		color: #000000;
+		background-color: #ffffff;
+		/*background: rgba(255, 255, 255, 0.8); */
+		border-color: #e7e7e7;
+		border-width: 0px;
+	}
+
+	.navbar-default a,
+	.navbar-default a:visited,
+	.navbar-default a:hover,
+	.navbar-default a:link,
+	.navbar-default a:active {
+		color: #000000;
+		font-family: "Dosis";
+	}
+
+	.navbar-nav>li>a,
+	.navbar-nav>li>a:link,
+	.navbar-nav>li>a:hover,
+	.navbar-nav>li>a:visited,
+	.navbar-nav>li>a:active {
+		color: #000000;
+	}
+
 	.listabox {
-		height:615px;
-		margin-bottom:150px;
+		height:270px;
+		margin-bottom:5px;
 	}
 
 	.ombretta {
 		
 	}
+
+	.containerevolu {
+		margin-bottom:100px;
+		margin-top:0px;
+	}
+
+	.containerdettaglio {
+		padding-left: 30px;
+		padding-right: 30px;
+		margin-top:50px;
+	}
+
+	.containerfreezer {
+		margin-top:150px;
+	}
+
+	.palt {
+		height:100px;
+	}
+
+	.titololist {
+		height: auto;
+		font-size:14px;
+	}
+
+	.cate {
+		background-color: #a20e3f;
+		color: #ffffff;
+		margin-top: 15px;
+		margin-left:-15px;
+		padding-left:27px;
+		width:100%;
+	}
+
+	.footerok {
+		background-color: #ffffff; 
+		height: 300px; 
+		margin-top: 200px;
+	}
+
+	.logofooterx {
+		height:110px; 
+		width: auto; 
+		padding-top: 20px;
+		position:relative;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+
+
 }

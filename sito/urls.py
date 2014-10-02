@@ -8,5 +8,6 @@ urlpatterns = patterns('',
     url(r'^$', IndexView, name='home'),
     url(r'^(?P<post_id>\d+)/$', DettaglioView, name="dettaglio"),
     url(r'freezer$', FreezerView, name="freezer"),
+    url(r'^ricettario/(?P<post_id>\d+)/$', RicettarioDettaglioView, name="ricettedettaglio"),
     #url(r'contact$', contactview, name="contatti"),
 )

@@ -49,7 +49,7 @@ INSTALLED_APPS = (
     'easy_thumbnails',
     'image_cropping',
     'taggit',
-    'south',
+    #'south',
     'sito',
 )
 

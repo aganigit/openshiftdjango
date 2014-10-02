@@ -24,7 +24,7 @@ class Stagioni(models.Model):
         return self.titolo
 
     class Meta:
-        verbose_name_plural = "Categorie"
+        verbose_name_plural = "Stagioni"
 
 class Immagini(models.Model):
     titolo = models.CharField(max_length=100, verbose_name="Titolo del Progetto:")
@@ -145,6 +145,9 @@ class Post(models.Model):
     pagrai = models.BooleanField('Pagina Video Rai',
                                     default=False,
                                     help_text="Attiva Pagina Video Rai")
+    pagrice = models.BooleanField('Pagina Ricettario',
+                                    default=False,
+                                    help_text="Attiva Pagina Ricettario")
     miniatura = ImageRatioField('image', '960x1280')
     cropping = ImageRatioField('image', '1170x500')
     galleria = models.ManyToManyField(Immagini, null=True, blank=True,

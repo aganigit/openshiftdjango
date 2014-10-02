@@ -4,7 +4,7 @@
 <div class="row">
 
 	{% for immagini in post.galleria.all %}	
-	<div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+	<div class="col-xs-12 col-sm-4 col-md-2 col-lg-2" style="margin-bottom: 20px;">
 		{% load cropping %}
 		<a href="{{MEDIA_URL}}/{{immagini.image}}" data-lightbox="{{post.titolo}}">
 			<img src="{% cropped_thumbnail immagini "thumb" %}" class="img-responsive" alt="{{post.titolo}}">
