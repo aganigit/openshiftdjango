@@ -132,8 +132,8 @@ IMAGE_CROPPING_SIZE_WARNING = True
 
 
 EMAIL_HOST = 'smtp.gmail.com'   
-EMAIL_HOST_PASSWORD = 'kilpin99'  
-EMAIL_HOST_USER = 'pierangelo1982@googlemail.com' 
+EMAIL_HOST_PASSWORD = 'xxxxxx'  
+EMAIL_HOST_USER = 'xxxxxxxxx@googlemail.com' 
 EMAIL_PORT = 587 #465 or 587  
 #EMAIL_SUBJECT_PREFIX = 'Django Test mail'  
 EMAIL_USE_TLS = True  
